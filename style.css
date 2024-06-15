@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 main {
@@ -115,4 +116,44 @@ main {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media(max-width:375px){
+    main {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+        border-radius: 10px;
+    }
+    .left-side {
+        width: auto;
+    }
+    .left-side img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: initial;
+    }
+    .right-side {
+        width: auto;
+    }
+    .right-side-container {
+        margin: 25px 23px 25px 25px;
+    }
+    .right-side-h1 h1 {
+        font-size: 31px;
+        margin: 12px 0 15px 0;
+    }
+    .right-side-p p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .right-side-prices{
+        margin-top: 18px;
+    }
+    .right-side-butttom a{
+        margin-top: 15px;
+    }
 }
